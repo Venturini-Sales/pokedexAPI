@@ -3,8 +3,6 @@ import './App.css'
 import { api } from './lib/axios'
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faArrowLeft, faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
 
@@ -22,11 +20,11 @@ const App = () => {
   };
 
   const buttonSearch = async () => {
-    const id = toast.loading("Buscando pokemon");
+    const id = toast.loading("Searching Pokemon");
     try {
       const response = await api.get(`/pokemon/${namePokemon.toLowerCase()}`);
       toast.update(id, {
-        render: "Pokemon encontrado",
+        render: "Pokemon found",
         type: "success",
         isLoading: false,
         autoClose: 2000,
@@ -36,7 +34,7 @@ const App = () => {
       setNamePokemon('');
     } catch (error) {
       toast.update(id, {
-        render: "Pokemon não encontrado",
+        render: "Pokemon not found",
         type: "warning",
         isLoading: false,
         autoClose: 2000,
@@ -49,18 +47,17 @@ const App = () => {
       getPokemon();
   }, [idPokemon]);
 
-  const proximo = () => {
+  const next = () => {
     if (idPokemon < 1010) {
     setIdPokemon(idPokemon+1)
     }
   }
 
-  const anterior = () => {
+  const previous = () => {
     if (idPokemon > 1) {
       setIdPokemon(idPokemon - 1);
     }
   }
-
 
   return (
 
@@ -80,16 +77,16 @@ const App = () => {
           <input type='search' className='pokemon-search' placeholder='Name or Id' value={namePokemon} onChange={(e)=>setNamePokemon(e.target.value)} required></input>
       </form>
 
-    <div className="button-clear">
-      <button className="button-circle btn-clear" onClick={buttonSearch}>Buscar</button>
+    <div className="button-search">
+      <button className="button-circle btn-search" onClick={buttonSearch}>Search</button>
     </div>
 
     <div className='button-left'>
-      <button className='button btn-left' onClick={anterior}><FontAwesomeIcon icon={faArrowLeft} style={{ color: "white" }} /></button>
+      <button className='button btn-left' onClick={previous}></button>
     </div>
 
     <div className='button-right'>
-      <button className='button btn-right' onClick={proximo}><FontAwesomeIcon icon={faArrowRight} style={{ color: "white" }} /></button>
+      <button className='button btn-right' onClick={next}></button>
     </div>
 
       <img src="../src/assets/pokedex.png" alt='Pokedex' className='pokedex'/>

@@ -5,6 +5,9 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, #7cd3fc, #fff);
   text-align: center;
   min-height: 100vh;
@@ -41,13 +44,14 @@ main {
 .form {
   position: absolute;
   width: 96%;
-  top: 77%;
+  height: 25%;
+  top: 75.2%;
   right: 10%;
 }
 
 .pokemon-search {
   width: 50%;
-  min-height: 40px;
+  height: 45%;
   background-color: rgb(104, 223, 104);
   color: rgb(36, 95, 29);
   text-align: center;
@@ -68,7 +72,7 @@ input::placeholder {
   text-transform: uppercase;
 }
 
-.button-clear {
+.button-search {
   position: absolute;
   bottom: 26.5%;
   left: 22%;
@@ -85,6 +89,9 @@ input::placeholder {
   border: none;
   outline: none;
   border-radius: 100px;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 80%;
 }
 
 .button-left {
