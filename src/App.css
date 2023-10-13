@@ -30,11 +30,11 @@ main {
 }
 
 .data {
-  font-size: 25px;
+  font-size: 22px;
   top: 51.7%;
   right: 18%;
   position: absolute;
-  color: rgb(39, 39, 39);
+  color: rgb(48, 48, 48);
   text-transform: capitalize;
 }
 
@@ -89,7 +89,7 @@ input::placeholder {
 
 .button-left {
   position: absolute;
-  bottom: 25.5%;
+  bottom: 26%;
   left: 67.6%;
   width: 5%;
   transform: translate(-43%, 0);
@@ -97,28 +97,11 @@ input::placeholder {
 
 .button-right {
   position: absolute;
-  bottom: 25.5%;
+  bottom: 26%;
   left: 79%;
   width: 5%;
   transform: translate(-43%, 0);
 }
-
-.button-up {
-  position: absolute;
-  bottom: 29.5%;
-  left: 73.5%;
-  width: 5%;
-  transform: translate(-43%, 0);
-}
-
-.button-down{
-  position: absolute;
-  bottom: 21.7%;
-  left: 73.5%;
-  width: 5%;
-  transform: translate(-43%, 0);
-}
-
 
 .button {
   width: 100%;
@@ -127,4 +110,7 @@ input::placeholder {
   cursor: pointer;
   border: none;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
