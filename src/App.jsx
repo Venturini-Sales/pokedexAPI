@@ -14,18 +14,18 @@ const App = () => {
     const response = await api(`/pokemon/${idPokemon}`)
     setData(response.data)
   }
-
+  
    const getPokemonByName = async () => {
     setNamePokemon(namePokemon);
   };
 
   const buttonSearch = async () => {
-    const id = toast.loading("Searching Pokemon");
+    const id = toast.loading('Searching Pokemon');
     try {
       const response = await api.get(`/pokemon/${namePokemon.toLowerCase()}`);
       toast.update(id, {
-        render: "Pokemon found",
-        type: "success",
+        render: 'Pokemon found',
+        type: 'success',
         isLoading: false,
         autoClose: 2000,
       });
@@ -34,8 +34,8 @@ const App = () => {
       setNamePokemon('');
     } catch (error) {
       toast.update(id, {
-        render: "Pokemon not found",
-        type: "warning",
+        render: 'Pokemon not found',
+        type: 'warning',
         isLoading: false,
         autoClose: 2000,
       });
@@ -44,8 +44,20 @@ const App = () => {
   };
 
   useEffect(() => {
-      getPokemon();
-  }, [idPokemon]);
+    getPokemon();
+}, [idPokemon]);
+
+  const buttonEnter = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      buttonSearch();
+    }
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    buttonSearch(); 
+  };
 
   const next = () => {
     if (idPokemon < 1010) {
@@ -60,7 +72,6 @@ const App = () => {
   }
 
   return (
-
     
     <main>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,8 +84,8 @@ const App = () => {
         <span className="pokemonId">{data?.id}</span> - <span className="pokemonName">{data?.name}</span>
       </h1>
 
-      <form className='form'>
-          <input type='search' className='pokemon-search' placeholder='Name or Id' value={namePokemon} onChange={(e)=>setNamePokemon(e.target.value)} required></input>
+      <form className='form' onSubmit={handleFormSubmit}>
+          <input type='search' className='pokemon-search' placeholder='Name or Id' value={namePokemon} onChange={(e)=>setNamePokemon(e.target.value)} onKeyPress={buttonEnter} required></input>
       </form>
 
     <div className="button-search">
