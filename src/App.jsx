@@ -89,7 +89,7 @@ const App = () => {
       <button className='button btn-right' onClick={next}></button>
     </div>
 
-      <img src="../src/assets/pokedex.png" alt='Pokedex' className='pokedex'/>
+      <img src="https://lh3.googleusercontent.com/pw/ADCreHcp_k8Bo2aiQxcjYzEoHLlv5pBS_2V5hUPx6SmsAM-PDwscN8qMJ7Y5wvG-KlM6hFqGHDVN334S4qZ_PW-4KjUmDPKUsG9RodpNub15xABEbHBvytNWWtN6RnftVFTPAP1iArPvyqaLja8WDj_wCPOw6ieiCK1tfbeEo--8or2uK4SEjQuL45UhLM7pcurJ8Vt2lu80u8h29InvNoxhhRn__ULgBlVAN_BCtHTjIKEihHZMkFB3haMS2ROuRUlqXG5bV3vIP6T7IyAgB_0tgGjks-W3mSNpS8GIKTsGdczkHSYmBTGrGePoWxlxNiXSqye0YPOEy5SASOhNNooYjcGPLjmdrOZQLhnBjOYZ-jWdp8K-w17UCHkAW4l3sHTtPBp5Nlseb7XWrj-Ml9t3My9ESMKLzJ67gXpDtW4u2klAxfWt3vdiw8UKh9lZRGZjNob3DK5-jVGvoaw4760UGtVlX-tO9KWMohpsNvHcsGNiqxG1Zf1ryB-jCvaxLOl5fve1MKeoeOOmVPfxfRMg6qr1f6Wvgr2YVfF52OTiYA8W04oT7wnw8wq49wQrqqBo6TZ87gNdv9jPRZmbBw6qRPO_QGvZpBecUvF4qiAMtc4ec3PQemNwyOo50HfmsGSZWtZaidmoDxJ7gHMR84hWYeZIZUylN7t7sz3aejMs2Kt4KN3q-DsDCuQ_GINLUDaICGf_FAkV1Vin9ty9rtj3xpcs4eCG9oCYZ9TB0xyHKLBo2avgGJZQ0UbbSPdUsKxzJ8dFbR9STGTXFB3c4jC5b8uK8aXqmSm_r_xYIUpmBKp54TxLxGdl3E1aqO2YqFzS4dRdaZ1oWNBXql8t8PnAEiOfFw1NUGWbYANgVJlJrL5JAYQaX5oIo9usFzG3FPIoD8b9d3P2woO6RNIgFVWg45FXWrorebeCWyX8qrVk7QpMxLFgKk7AWJuHTUfLBOk=w425-h637-s-no?authuser=0" alt='Pokedex' className='pokedex'/>
 
       <ToastContainer/>
     </main>
