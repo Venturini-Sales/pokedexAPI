@@ -100,7 +100,7 @@ const App = () => {
       <button className='button btn-right' onClick={next}></button>
     </div>
 
-      <img src="https://lh3.googleusercontent.com/pw/ADCreHeHaBomeikipLrZ-s1pF6cHQ_iMIc_FaBgEC7ALpPJsWWrsb0BHugtpKr9SyXErJZzTW_tDiDeP9RqtesbCVGaRmQ7fgDlaqTQ_MwDR4Eiak35SUrKJs4z9ZUO6HqB3HHKxdVCXgXtvZve0zTTK_LcevLyKfQVmyEXvtHwqizObvUgBpKMEacHgwbZ_OQe7GQltLw3nxlUncX1_9YJbwu74bc0JWAIn7xmlZBgdbqAHalyB_ies4SQ4z3kwHPe0Ltgnk1leouqN3jcAvHi8JnSXLF9TFQK-t0h6BflAySfqOW5X3KmITFQx7MDZzpHBKcD9s9vqeZ51SVMmHb9Y2wp3tLNHK7koD9OfI0kTRj9Dy5KcYk0Y0JJeEx6GMuCt6bhJFV8GZSTbvkAL49DC1ROucbdpNG7kx_3Emmbp4wgY6SqET6DLbF2k6yKi7VjzZkpI1xrXX-cewLVNSPKO_YVAIFbUSymDcjEoVTLkh17Mb10OxiDVnVYMVFExZLaJMoC4Uj9-_mMasZTTnXUvchuSgH01h6aViIv_JV0ahvxStRx2HuLxwtVUl2swFJXsYltinYhcGGq0zjEGllkh653AL5a5o5KKsFq84n6z9ZQhm5FGpPZMj2rWCS1j_2FnjMWKiZZIAhU3QL2B6FTvMt6laxacWF4zXhPR0nrnj6F7p-YWBlHlTcTO6r9i-Lsg2OeZe0xPq4QOczWUE2fd10yNo5w-ojJ4Z4lFMZnRngZhFW1DTMjKKeHNzvhlv7HUZzWS4HgJKusOvrY85yzP-F2Ro7GLIk7esAMv2Matv_wP-OsHpJl3NhcbV09NGSVjrsGNoKruNQ0hDBfuU63NPGjOXQYh2YdYbTNVy_diW7trIco6sTwQ90PFtsv_L1aIrTnrI4nRNa9OMSiZWnEdt_gyWhTnEVW-4SYus7SE1a-EuMxHDZT71ODZ7zmHo_o=w425-h637-s-no?authuser=0" alt='Pokedex' className='pokedex'/>
+      <img src="https://i.imgur.com/dDoPHZh.png" alt='Pokedex' className='pokedex'/>
 
       <ToastContainer/>
     </main>
