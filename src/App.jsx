@@ -20,6 +20,10 @@ const App = () => {
   };
 
   const buttonSearch = async () => {
+    if (!namePokemon) {
+      return
+    }
+
     const id = toast.loading('Searching Pokemon');
     try {
       const response = await api.get(`/pokemon/${namePokemon.toLowerCase()}`);
